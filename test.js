@@ -1,4 +1,5 @@
-var inherits = require('./inherits.js')
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var inherits = require('inherits/inherits.js')
 var t = require('tap')
 
 function test(c) {
@@ -23,3 +24,5 @@ var c = new Child
 test(c)
 
 t.isa(inherits, 'function')
+
+return module.exports;});
