@@ -25,5 +25,11 @@
   "files": [
     "inherits.js",
     "inherits_browser.js"
-  ]
+  ],
+  "wilton": {
+    "excludes": [
+      "inherits.js",
+      "test.js"
+    ]
+  }
 }
