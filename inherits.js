@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 try {
   var util = require('util');
   if (typeof util.inherits !== 'function') throw '';
@@ -7,4 +7,4 @@ try {
   module.exports = require('inherits/inherits_browser.js');
 }
 
-return module.exports;});
+require = requireOrig;});
